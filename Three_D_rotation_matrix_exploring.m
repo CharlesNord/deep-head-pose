@@ -26,10 +26,14 @@ x1 = [1;0;0];
 x2 = [0;1;0];
 x3 = [0;0;1];
 
-% compare the following 3 expressions with plot_pose_cube and draw_axis in
+% compare the following 3 results with “draw_axis” and “plot_pose_cube” in
 % the following file
 % https://github.com/natanielruiz/deep-head-pose/blob/master/code/utils.py
 
 total*x1
 total*x2
 total*x3
+
+% [                        cos(r)*cos(y),                       -cos(y)*sin(r),         sin(y)]
+% [ cos(p)*sin(r) + cos(r)*sin(p)*sin(y), cos(p)*cos(r) - sin(p)*sin(r)*sin(y), -cos(y)*sin(p)]
+% [ sin(p)*sin(r) - cos(p)*cos(r)*sin(y), cos(r)*sin(p) + cos(p)*sin(r)*sin(y),  cos(p)*cos(y)]
